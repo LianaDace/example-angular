@@ -1,0 +1,22 @@
+.header {
+  background-color: #2F8F9D;
+  padding: 10px;
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid transparent;
+
+  &.active {
+    color: black;
+    border-bottom: 1px solid black;
+  }
+}
+
+
