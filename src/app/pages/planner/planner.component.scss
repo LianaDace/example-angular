@@ -1,6 +1,6 @@
 .planner-section {
 
-  background-color: #B3E8E5;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .planner {
-  background-color: #FFE4C0;
+  background-color: #B3E8E5;
   width: 500px;
   padding: 10px 20px 20px 20px;
   height: fit-content;
@@ -32,7 +32,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 
   &:focus {
-    outline: #bb917f solid 3px;
+    outline: #309892;
   }
 
 }
@@ -41,7 +41,7 @@
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
-  background-color: #dcbc92;
+  background-color: #0b8d86;
   color: white;
   cursor: pointer;
 
@@ -58,7 +58,7 @@
 }
 
 .planner-task {
-  background-color: #dcbc92;
+  background-color: #75bbb5;
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;
@@ -76,14 +76,14 @@
 }
 
 .planner-delete-button {
-  background-color: #FFE4C0;
+  background-color: #B3E8E5;
   border-radius: 50%;
   width: 20px;
   height: 20px;
   border: none;
   display: flex;
   align-items: center;
-  color: #5e5140;
+  color: #055753;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   cursor: pointer;
   padding: 0 3px 0 5px;

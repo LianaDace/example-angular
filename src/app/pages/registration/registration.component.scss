@@ -3,27 +3,3 @@
   justify-content: center;
   margin-top: 30px;
 }
-
-.registration-form {
-  background-color: #B3E8E5;
-  padding: 20px;
-  max-width: 300px;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
-  position: relative;
-}
-
-.form-label {
-  display: flex;
-  flex-direction: column;
-}
-
-.error-message {
-  position: absolute;
-  color: red;
-  bottom: 0;
-  font-size: 10px;
-}
