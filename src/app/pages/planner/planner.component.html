@@ -5,14 +5,20 @@
 
     <div class="planner-actions">
     <input [(ngModel)]="taskInputValue" class="planner-task-input" type="text" placeholder="Add new task"/>
+
     <button (click)="addTask()" class="planner-add-button">Add</button>
+
   </div>
 
     <div class="planner-tasks">
       <div class="planner-task" *ngFor="let task of tasks; let i = index">
+        <div class="planner-task-check">
+       <!-- <input class="check-box" type="checkbox" />-->
         <span>{{ i + 1 }}. {{ task }} </span>
+        </div>
         <button class="planner-delete-button" (click)="deleteTask(i)">X</button>
       </div>
     </div>
+
   </div>
 </section>

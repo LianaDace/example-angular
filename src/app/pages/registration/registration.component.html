@@ -1,1 +1,42 @@
-<p>registration works!</p>
+
+<section class="registration-section">
+<form class="registration-form" [formGroup]="registrationForm">
+  <div class="form-group">
+  <label class="form-label">
+    <span>Name</span>
+    <input  formControlName="name" type="text"/>
+  </label>
+    <small class="error-message"
+      *ngIf="registrationForm.get('name')?.hasError('required') && registrationForm.get('name')?.touched">
+      Field is required
+    </small>
+  </div>
+  <div class="form-group">
+  <label class="form-label">
+    <span>Surname</span>
+    <input formControlName="surname" type="text"/>
+  </label>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">
+      <span>Subscribe</span>
+      <input formControlName="subscribe" type="checkbox" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">
+      <span>Country</span>
+  <select formControlName="country" >
+    <option value='LV'>Latvia</option>
+    <option value="LT">Lithuania</option>
+    <option value="EE">Estonia</option>
+  </select>
+    </label>
+  </div>
+
+  <button [disabled]="registrationForm.invalid" (click)="submitForm()">Sign up</button>
+</form>
+</section>
+

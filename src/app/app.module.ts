@@ -8,7 +8,8 @@ import { PlannerComponent } from './pages/planner/planner.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+
 
 
 @NgModule({
@@ -17,12 +18,14 @@ import {FormsModule} from "@angular/forms";
     PlannerComponent,
     PageNotFoundComponent,
     RegistrationComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
