@@ -6,7 +6,7 @@
 .registration-form {
   background-color: #B3E8E5;
   padding: 20px;
-  max-width: 300px;
+  width: 500px;
   border-radius: 5px;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
 }
@@ -36,9 +36,21 @@
   background-color: #0b8d86;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    opacity: 0.9;
-    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+    background-color: #065d58;
+  }
+}
+.subscribe-checkbox {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+
+}
+
+@media  screen and (max-width: 500px){
+  .registration-form{
+    max-width: 100%;
   }
 }

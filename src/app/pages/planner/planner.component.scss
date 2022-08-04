@@ -44,10 +44,10 @@
   background-color: #0b8d86;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 
   &:hover {
-    opacity: 0.9;
-    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+    background-color: #065d58;
   }
 }
 .planner-tasks {

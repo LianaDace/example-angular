@@ -9,8 +9,9 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
 import { RegistrationFormComponent } from './pages/registration/registration-form/registration-form.component';
+import { CharactersComponent } from './pages/characters/characters.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -22,14 +23,15 @@ import { RegistrationFormComponent } from './pages/registration/registration-for
     RegistrationComponent,
     HeaderComponent,
     RegistrationComponent,
-    RegistrationFormComponent
+    RegistrationFormComponent,
+    CharactersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
