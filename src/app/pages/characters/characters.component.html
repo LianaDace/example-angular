@@ -1,9 +1,15 @@
+
 <div class="character-container" *ngIf="charactersResponse$ | async as charactersResponse">
-  <div class="character-card" *ngFor="let character of charactersResponse.results">
-    <div>
-      <img [src]="character.image" alt="">
+  <div *ngFor="let character of charactersResponse.results;  let i = index">
+    <div class="character-card" >
+      <img  class="character-image" [src]="character.image" alt="">
+
+    <div class="character-properties">
+      {{ character.name}}
+      <br>
+      {{ character.created | date: "dd/MM/yyyy" }}
     </div>
-    <div>{{ character.name }}</div>
-    <div>{{ character.created | date: "dd/MM/yyyy" }}</div>
+    </div>
+      </div>
   </div>
-</div>
+
